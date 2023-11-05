@@ -7,6 +7,20 @@ group "latest" {
   ]
 }
 
+group "linux" {
+  targets = [
+    "alpine_jdk11",
+    "alpine_jdk17",
+    "alpine_jdk21",
+    "ubi_jdk11",
+    "ubi_jdk17",
+    "ubi_jdk21",
+    "ubuntu_jdk11",
+    "ubuntu_jdk17",
+    "ubuntu_jdk21",
+  ]
+}
+
 group "alpine" {
   targets = [
     "alpine_jdk11",
