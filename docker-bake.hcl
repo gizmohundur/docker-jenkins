@@ -1,4 +1,12 @@
 // groups
+group "latest" {
+  targets = [
+    "alpine_jdk21",
+    "ubi_jdk21",
+    "ubuntu_jdk21",
+  ]
+}
+
 group "linux" {
   targets = [
     "alpine_jdk11",
