@@ -40,7 +40,7 @@ variable "REGISTRY" {
 }
 
 variable "JENKINS_REPO" {
-  default = "library/jenkins"
+  default = "jenkins/jenkins"
 }
 
 variable "PLUGIN_CLI_VERSION" {
@@ -105,9 +105,9 @@ target "alpine_jdk21" {
     JENKINS_REPO_URL   = JENKINS_REPO_URL 
   }
   tags = [
-    tag(true, "alpine-latest"),
+    tag(false, "alpine-latest"),
     tag(true, "alpine-jdk21"),
-    tag(true, "alpine"),
+    tag(false, "alpine"),
   ]
   platforms = ["linux/amd64", "linux/arm64"]
 }
@@ -152,9 +152,9 @@ target "ubi_jdk21" {
     JENKINS_REPO_URL   = JENKINS_REPO_URL 
   }
   tags = [
-    tag(true, "ubi-latest"),
+    tag(false, "ubi-latest"),
     tag(true, "ubi-jdk21"),
-    tag(true, "ubi"),
+    tag(false, "ubi"),
   ]
   platforms = ["linux/amd64", "linux/arm64"]
 }
@@ -199,10 +199,10 @@ target "ubuntu_jdk21" {
     JENKINS_REPO_URL   = JENKINS_REPO_URL 
   }
   tags = [
-    tag(true, "latest"),
-    tag(true, "ubuntu-latest"),
+    tag(false, "latest"),
+    tag(false, "ubuntu-latest"),
     tag(true, "ubuntu-jdk21"),
-    tag(true, "ubuntu"),
+    tag(false, "ubuntu"),
   ]
   platforms = ["linux/amd64", "linux/arm64"]
 }
