@@ -28,11 +28,11 @@ variable "JENKINS_REPO_URL" {
 }
 
 variable "JENKINS_VERSION" {
-  default = "2.430"
+  default = "2.427"
 }
 
 variable "JENKINS_SHA" {
-  default = "8f603a9120dd481c9d3986c6624731869a3731ad560e7d0fdaebe0722efdc365"
+  default = "0fc5c7b9956221ed7deac1ce7c2ac3f86d0059fac6ceabfec11718550fb701d2"
 }
 
 variable "REGISTRY" {
